@@ -7,9 +7,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load the dt pickled model
-# dt_model = pickle.load(open('dt_model.pkl', 'rb'))
-# # Load the rf pickled model
-# rf_model = pickle.load(open('rf_model.pkl', 'rb'))
+dt_model = pickle.load(open('dt_model.pkl', 'rb'))
+# Load the rf pickled model
+rf_model = pickle.load(open('rf_model.pkl', 'rb'))
 # Load the xgb pickled model
 xgb_model = pickle.load(open('xtreme_model.pkl','rb'))
 # Load the svc pickled model
