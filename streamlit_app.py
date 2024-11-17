@@ -7,9 +7,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load the dt pickled model
-dt_model = pickle.load(open('dt_model.pkl', 'rb'))
-# Load the rf pickled model
-rf_model = pickle.load(open('rf_model.pkl', 'rb'))
+# dt_model = pickle.load(open('dt_model.pkl', 'rb'))
+# # Load the rf pickled model
+# rf_model = pickle.load(open('rf_model.pkl', 'rb'))
 # Load the xgb pickled model
 xgb_model = pickle.load(open('xtreme_model.pkl','rb'))
 # Load the svc pickled model
@@ -26,7 +26,7 @@ st.write('This app predicts weather a patient has Leukemia or not using the prot
 # button to upload patient data
 uploaded_file = st.file_uploader("Upload Paitent Data", type="csv")
 #slider for the user to select the model
-model = st.sidebar.selectbox('Select the model', ('Decision Tree', 'Random Forest', 'XG Boost', 'Support Vector Machine', 'K-Nearest Neighbors', 'Logistic Regression'))
+model = st.sidebar.selectbox('Select the model', ( 'XG Boost', 'Support Vector Machine', 'K-Nearest Neighbors', 'Logistic Regression'))
 # if the user selects the decision tree model
 if model == 'Decision Tree':
     st.write('You have selected Decision Tree model')
